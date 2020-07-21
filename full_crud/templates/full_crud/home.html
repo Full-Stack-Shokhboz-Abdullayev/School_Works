@@ -1,0 +1,244 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Brand New Site</title>
+		
+		{% include '../variables/regularLinks.html' %}
+		
+		<link rel="stylesheet" href="{% static '/styles/sass/style.css' %}" />
+	</head>
+	<body>
+		<div class="to_top">
+			<div class="contact">
+				<h4>
+					Have any questions?
+				</h4>
+				<p><i class="far fa-phone"> </i> (+998) 99-473-84-46</p>
+				<p><i class="far fa-envelope"></i> school_works@gmail.com</p>
+			</div>
+			<div class="user-login-register">
+				<h3>
+					Login
+				</h3>
+				<h2>||</h2>
+				<h3>
+					Register
+				</h3>
+			</div>
+		</div>
+		<div class="big-background">
+			<div class="darken"></div>
+			<div class="images-slide">
+				<img
+					src="{% static '/images/pupil8.jpg' %}"
+					alt="img9"
+					id="lastImgClone"
+				/>
+				<img src="{% static '/images/pupil2.jpg' %}" alt="img2" />
+				<img src="{% static '/images/pupil3.jpg' %}" alt="img3" />
+				<img src="{% static '/images/pupil4.jpg' %}" alt="img4" />
+				<img src="{% static '/images/pupil5.jpg' %}" alt="img5" />
+				<img src="{% static '/images/pupil6.jpg' %}" alt="img6" />
+				<img src="{% static '/images/pupil8.jpg' %}" alt="img9" />
+				<img
+					src="{% static '/images/pupil2.jpg' %}"
+					alt="img2"
+					id="firstImgClone"
+				/>
+			</div>
+			<div class="logo z">
+				<img
+					src="{% static '/images/logo-dark.svg' %}"
+					class="logo-img"
+					alt="Logo"
+				/>
+			</div>
+			<nav class="z">
+				<ul class="navLinks">
+					<li class="li">
+						<button><i class="fad fa-home"></i> Home</button>
+					</li>
+					<li class="li">
+						<button class="angle">
+							<i class="fal fa-angle-down" aria-hidden="true"></i>
+							Pupils
+						</button>
+						<ul class="dropdown" id="d1">
+							{% for grade in grades %}
+							<li><a href="{% url '' %}">{{grade.num}}-graders</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="li">
+						<button class="angle">
+							<i class="fal fa-angle-down" aria-hidden="true"></i>
+							Staff
+						</button>
+						<ul class="dropdown" id="d2">
+							{% for grade in grades %}
+							<li><a href="#">{{grade.num}}-graders</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="li">
+						<button class="angle">
+							<i class="fal fa-angle-down" aria-hidden="true"></i>
+							Courses
+						</button>
+
+						<ul class="dropdown" id="d3">
+							{% for grade in grades %}
+							<li><a href="#">{{grade.num}}-graders</a></li>
+							{% endfor %}
+						</ul>
+					</li>
+					<li class="li">
+						<button>
+							<i class="fad fa-calendar"></i> Calendar
+						</button>
+					</li>
+					<li class="li">
+						<button><i class="fal fa-newspaper"></i> News</button>
+					</li>
+
+					<li class="li">
+						<button>
+							<i class="fad fa-users"></i
+							><a href="{% url 'about' %}">About</a>
+						</button>
+					</li>
+				</ul>
+				<div class="hamburger">
+					<div class="line_1"></div>
+					<div class="line_2"></div>
+					<div class="line_3"></div>
+				</div>
+			</nav>
+			<div
+				class="continue rellax z"
+				data-rellax-speed="3"
+				data-rellax-mobile-speed="3"
+			>
+				<h3>
+					O'quv jarayoni uchun <br />
+					<span>Yangicha</span> <br />
+					yo'nalishni sinab ko'ring
+				</h3>
+
+				<button>
+					<span>Boshlamoq</span>
+				</button>
+			</div>
+			<div class="link-container-bottom z">
+				<ul>
+					<li class="bottom-links f">
+						<i class="fa fa-leaderboard"></i>
+						<div>Upcoming: New Courses</div>
+						<span>view more </span
+						><i class="fad fa-angle-right"></i>
+					</li>
+					<li class="bottom-links s">
+						Leadership Begins!
+						<span>view more </span
+						><i class="fad fa-angle-right"></i>
+					</li>
+					<li class="bottom-links t">
+						Upgrade Your Skills
+						<span>view more </span
+						><i class="fad fa-angle-right"></i>
+					</li>
+				</ul>
+			</div>
+			<div class="arrows left z">
+				<button>
+					<i class="fa fa-arrow-left"></i>
+				</button>
+			</div>
+			<div class="arrows right z">
+				<button>
+					<i class="fa fa-arrow-right"></i>
+				</button>
+			</div>
+			<div class="arrows down z">
+				<button>
+					<i class="fa fa-arrow-down" aria-hidden="true"></i>
+				</button>
+			</div>
+		</div>
+
+		<div class="footer">
+			<ul class="quick-links">
+				<li class="at_top"><span>Links</span></li>
+				<li><a href="">News</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Contact Us</a></li>
+				<li><a href="">Another Projects</a></li>
+			</ul>
+			<ul class="service">
+				<li class="at_top"><span>Services</span></li>
+				<li><a href="">Search</a></li>
+				<li><a href="">Archive</a></li>
+				<li><a href="">Download</a></li>
+				<li><a href="">Bug Report</a></li>
+			</ul>
+
+			<ul class="social">
+				<li class="at_top"><span>Follow Us</span></li>
+				<li class="linkIcon">
+					<a href=""><i class="fa fa-facebook-square"></i></a>
+				</li>
+				<li class="linkIcon">
+					<a href=""><i class="fa fa-instagram"></i></a>
+				</li>
+				<li class="linkIcon">
+					<a href=""><i class="fa fa-telegram"></i></a>
+				</li>
+			</ul>
+			<div class="newsletter">
+				<p>Subscribe to be notifyed.</p>
+
+				<form id="newsletter-form">
+					<input
+						required
+						title="Please first enter email to send us!"
+						placeholder="your_email@gmail.com"
+						type="email"
+						id="newsInput"
+					/>
+					<button id="newsletter-subs">Subscribe</button>
+					<button type="button" id="showInput">
+						Notify me.
+					</button>
+				</form>
+			</div>
+
+			<div class="copyright">
+				<div class="circle">
+					<span>
+						Copyright
+						<i class="fal fa-copyright"></i>
+						<span class="year"></span>
+						All rights reserved.
+					</span>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="{% static '/js/scripts/mobile_nav.js' %}"></script>
+	<script src="{% static '/js/scripts/index.js' %}"></script>
+	<script src="{% static '/js/scripts/focus.js' %}"></script>
+	<script src="{% static '/js/scripts/footer.js' %}"></script>
+	<script src="{% static '/js/scripts/scrollToBottom.js' %}"></script>
+	<script src="{% static '/node_modules/rellax/rellax.min.js' %}"></script>
+
+	<script>
+		let rellax = new Rellax(".rellax");
+		const year = new Date().getFullYear();
+		const toJoin = document.querySelector(".year");
+		toJoin.innerHTML = year;
+	</script>
+</html>

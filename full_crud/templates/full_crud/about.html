@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>About</title>
+		{% include '../variables/regularLinks.html' %}
+
+		<link rel="stylesheet" href="{% static '/styles/sass/style.css' %}" />
+		<script src="{% static '/node_modules/p5/lib/p5.js' %}"></script>
+	</head>
+	<body>
+		<main class="about">
+			<div id='parent-canv'></div>
+			<div class="imager-about">
+				<div class="first"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<header class="head-about">
+				<div class="logo-squared-about">
+					<!-- <img src="../images/about-logo.png" alt=""> -->
+					<img src="{% static '/images/logo-dark-about.svg' %}" alt="Logo" class="img-logo-about"></img>
+					<h3>
+						<small>
+							The
+						</small>
+						<span>
+							T-Team
+						</span>
+					</h3>
+				</div>
+				<div class="content-about">
+					<h3>
+						Who We Are?
+					</h3>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing
+						elit. Sequi voluptates dolor vitae porro ipsam quam,
+						nobis delectus magnam itaque exercitationem dignissimos
+						dicta debitis? Vero rerum voluptatibus non minus maiores
+						nisi!
+					</p>
+				</div>
+			</header>
+			<div class="team-about">
+				<div class="img-container-about">
+					<div class="person"></div>
+					<div class="person"></div>
+					<div class="person"></div>
+				</div>
+			</div>
+		</main>
+		<script src="{% static '/js/scripts/about.js' %}"></script>
+	</body>
+</html>

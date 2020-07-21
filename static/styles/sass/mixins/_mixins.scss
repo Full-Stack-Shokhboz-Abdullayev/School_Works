@@ -1,0 +1,3 @@
+@mixin fSize($num, $vw: 1vw) {
+	font-size: calc(#{$num} + #{$vw});
+}
