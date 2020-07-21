@@ -8,7 +8,6 @@
 		{% include '../variables/regularLinks.html' %}
 
 		<link rel="stylesheet" href="{% static '/styles/sass/style.css' %}" />
-		<script src="{% static '/node_modules/p5/lib/p5.js' %}"></script>
 	</head>
 	<body>
 		<main class="about">
@@ -54,6 +53,8 @@
 				</div>
 			</div>
 		</main>
+		<script src="{% static '/node_modules/p5/lib/p5.min.js' %}"></script>
+
 		<script src="{% static '/js/scripts/about.js' %}"></script>
 	</body>
 </html>
