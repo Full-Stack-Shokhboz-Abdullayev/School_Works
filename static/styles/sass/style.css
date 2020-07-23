@@ -978,8 +978,8 @@ body .newsletter-box .box input[type="submit"]:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-transform: translateY(-12%);
-            transform: translateY(-12%);
+    -webkit-transform: translateY(-14%) !important;
+            transform: translateY(-14%) !important;
   }
   .link-container-bottom ul li {
     width: 100% !important;
