@@ -152,20 +152,18 @@
 	}
 }
 @media (max-width: 440px) {
-	
-
-	
 	.link-container-bottom {
 		ul {
-			margin-top: 0px;
+			margin-top: 0px !important;
 			display: flex !important;
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-evenly;
 			align-items: center;
-			// grid-gap: 10px !important;
+			transform: translateY(0%);
 			li {
 				width: 100% !important;
 				height: 16vh !important;
+				margin-bottom: 20px !important;
 				background-color: rgba(
 					$color: aliceblue,
 					$alpha: 0.25

@@ -964,7 +964,7 @@ body .newsletter-box .box input[type="submit"]:hover {
 
 @media (max-width: 440px) {
   .link-container-bottom ul {
-    margin-top: 0px;
+    margin-top: 0px !important;
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
@@ -972,15 +972,19 @@ body .newsletter-box .box input[type="submit"]:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   .link-container-bottom ul li {
     width: 100% !important;
     height: 16vh !important;
+    margin-bottom: 20px !important;
     background-color: rgba(240, 248, 255, 0.25) !important;
     color: aliceblue;
   }
