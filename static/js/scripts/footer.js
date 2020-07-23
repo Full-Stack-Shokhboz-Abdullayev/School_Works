@@ -1,25 +1,35 @@
-const showNewsletter = document.querySelector("#showInput");
-const newsletterInput = document.querySelector("#newsInput");
-const newsletterBtn = document.querySelector("#newsletter-subs");
+const notifier = document.querySelector('.notify');
+const nForm = document.querySelector('.box form')
+const nP = document.querySelector('.box p')
 
-showNewsletter.addEventListener("click", () => {
-	newsletterBtn.classList.add("show-newsletter-btn"); //done
-	showNewsletter.classList.add("hide-newsletter-shower"); // done
-	newsletterInput.classList.add("show-newsletter-input"); // 
-});
+const tl = new TimelineLite(
+    {
+        paused: true,
+    }
+)
 
-const newsletterForm = document.querySelector('#newsletter-form');
+tl.to('.notify', 0.1, {
+    opacity: 0,
+    pointerEvents: 'none',
+}).to(
+    ".input-newsletter", 0.2, {
+        width: '65%',
+        ease: Power3.easeIn,
+    },
+    '-=0.3'
+)
 
-newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    newsletterBtn.classList.remove("show-newsletter-btn"); //done
-	showNewsletter.classList.remove("hide-newsletter-shower"); // done
-    newsletterInput.classList.remove("show-newsletter-input");
-    // newsletterInput.value = '';
-    showNewsletter.innerText = 'Thank You!'
-    showNewsletter.disabled = 'disabled'
-    //after sending post
-    e.target.clear()
+
+
+notifier.addEventListener('click', () => {
+    tl.play()
 })
 
+nForm.addEventListener('submit', (e) => {
+    e.preventDefault()
+    tl.reverse()
+    notifier.innerText = 'Thank You!'
+    nP.innerText = 'You are subscribed to our newsletter.'
+    notifier.disabled = 'disabled'
+})
 

@@ -152,19 +152,19 @@
 	}
 }
 @media (max-width: 440px) {
-	.show-newsletter-btn {
-		margin-left: 73.5% !important;
-		// padding: 1vw !important;
-	}
+	
 
-	.show-newsletter-input {
-		width: 93% !important;
-	}
+	
 	.link-container-bottom {
 		ul {
-			margin-top: 35px;
-			grid-gap: 10px !important;
+			margin-top: 0px;
+			display: flex !important;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			// grid-gap: 10px !important;
 			li {
+				width: 100% !important;
 				height: 16vh !important;
 				background-color: rgba(
 					$color: aliceblue,
@@ -180,6 +180,9 @@
 			}
 		}
 	}
+	.big-background {
+		padding-top: 0px !important;
+	}
 
 	.navLinks {
 		background-color: rgba(
@@ -190,7 +193,7 @@
 		color: aliceblue;
 	}
 	.images-slide {
-		top: 12vh;
+		top: 0vh;
 		img {
 			height: 115vw !important;
 		}
@@ -204,17 +207,7 @@
 	}
 }
 
-
-
-
-
-
 @media (max-width: 745px) {
-
-	.newsletter {
-		justify-content: space-around !important;
-	}
-
 	.footer {
 		grid-template-columns: 1fr !important;
 		grid-template-rows: 1fr 1fr 1fr 1.5fr 0.5fr !important;
@@ -223,76 +216,28 @@
 			flex-direction: row !important;
 			justify-content: space-around !important;
 			align-items: center !important;
-			// display: grid !important;
 		}
 		.quick-links {
 			grid-row: 1/2;
-			// grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-			// align-self: center;
-			// justify-self: center;
 		}
 		.service {
 			grid-row: 2/3;
-			// align-self: center;
-			// justify-self: center;
 		}
 		.social {
 			grid-row: 3/4;
-			// .at_top {
-			// 	// margin-right: 60px;
-			// }
+
 			padding-right: 25%;
-			// align-self: center;
-			// justify-self: center;
-		}
-		.at_top {
-			flex-grow: 0.2;
 		}
 
-		.newsletter {
+		.newsletter-box {
+			width: 100% !important;
+
 			grid-row: 4/5;
 			align-self: center;
 			justify-self: center;
+			.box {
+				width: 100% !important;
+			}
 		}
 	}
-}
-
-
-
-
-
-
-@media (max-width: 745px) and (min-width: 440px) {
-	.show-newsletter-btn {
-		margin-left: 60.5% !important;
-		// padding: 1vw !important;
-	}
-
-	.show-newsletter-input {
-		width: 73% !important;
-	}
-}
-
-@media (max-width: 760px) and (min-width: 745px) {
-	.show-newsletter-btn {
-		margin-left: 60.5% !important;
-	}
-
-	.show-newsletter-input {
-		width: 83% !important;
-	}
-}
-@media screen and (min-width: 760px) {
-	.show-newsletter-btn {
-		margin-left: 56.5%;
-	}
-	
-	.show-newsletter-input {
-		width: 70% !important;
-	}
-}
-
-.hide-newsletter-shower {
-	opacity: 0;
-	pointer-events: none;
 }

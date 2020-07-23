@@ -197,22 +197,22 @@
 					<a href=""><i class="fa fa-telegram"></i></a>
 				</li>
 			</ul>
-			<div class="newsletter">
-				<p>Subscribe to be notifyed.</p>
-
-				<form id="newsletter-form">
-					<input
-						required
-						title="Please first enter email to send us!"
-						placeholder="your_email@gmail.com"
-						type="email"
-						id="newsInput"
-					/>
-					<button id="newsletter-subs">Subscribe</button>
-					<button type="button" id="showInput">
-						Notify me.
-					</button>
-				</form>
+			<div class="newsletter-box">
+				<div class="box">
+					<p>Subscribe to be notified.</p>
+					<form action="">
+						<input
+							type="email"
+							required
+							class="input-newsletter"
+							placeholder="your_email@mail.com"
+						/>
+						<button class="notify" type="button">
+							Notify me
+						</button>
+						<input type="submit" value="Subscribe" />
+					</form>
+				</div>
 			</div>
 
 			<div class="copyright">
@@ -227,7 +227,21 @@
 			</div>
 		</div>
 	</body>
-
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"
+		integrity="sha512-pvDW4tehKKsohH97164HwKwRGFpzayEFWTVbk8HuUoLIQ7Jp+WLN5XYokVuoCj2aT6dy8ihbW8SRTG1k0W4mSQ=="
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"
+		integrity="sha512-ocsFo48WU8Xq6Y1Lwi7psXRAujG9E4TKNR4q1DbrKzaaxOMTEoao/a+mDoB+cYzY4lwbyxvqjkp/ZA1/MNlfsg=="
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"
+		integrity="sha512-tSIDeirKC6suYILHqqPuZH3s0MvD4a5vCHXhBIcdmq4gQXZ2IB3fEYA5x2f3D2p/CbSqzKEvuTEVbS5VZ2u+ew=="
+		crossorigin="anonymous"
+	></script>
 	<script src="{% static '/js/scripts/mobile_nav.js' %}"></script>
 	<script src="{% static '/js/scripts/index.js' %}"></script>
 	<script src="{% static '/js/scripts/focus.js' %}"></script>

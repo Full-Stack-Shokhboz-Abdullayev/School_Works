@@ -1,22 +1,13 @@
 @import "./hamburger/hamburger";
 @import "./variables/variables";
 @import "./mixins/mixins";
-html {
-	scroll-behavior: smooth;
-	overflow: auto;
-}
 
 @mixin op($op, $po) {
 	opacity: $op;
 	pointer-events: $po;
 }
 
-* {
-	padding: 0px;
-	margin: 0px;
-	box-sizing: border-box;
-	font-family: "Montserrat", Poppins, sans-serif;
-}
+@import './regularStyles/regularStyles';
 body {
 	overflow-x: hidden;
 	padding: 0px;
@@ -71,7 +62,8 @@ body {
 	.big-background {
 		z-index: 1;
 		padding-top: 40px;
-
+		grid-row-gap: 1vh;
+		
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -83,7 +75,8 @@ body {
 
 		background-color: darken($color: $mainColorHovered, $amount: 6%);
 		.logo {
-			padding-left: 30px;
+			
+			padding-left: 1vw;
 			img {
 				width: calc(3vw + 68px);
 				height: calc(3vh + 68px);
@@ -416,3 +409,4 @@ body {
 
 @import "./medias/medias";
 @import "./about/about";
+@import "./classes/classes";

@@ -61,66 +61,7 @@
 			}
 		}
 	}
-	.newsletter {
-		display: flex;
-		width: 100%;
-		flex-direction: column;
-		justify-content: center;
-		height: 100%;
-		align-items: center;
-		position: relative;
-		p {
-			font-size: calc(14px + 0.5vw);
-		}
-		form {
-			width: 100%;
-			height: 80%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			input {
-				width: 10%;
-				font-size: 16px;
-				padding: calc(0.5vw + 5px) ;
-				border: none;
-				border-radius: 135px;
-				transition: 0.4s ease width;
-				&:focus + #newsletter-subs {
-					background-color: $mainColorHovered;
-					border: 2px solid $borderColorHovered;
-				}
-			}
-			#newsletter-subs {
-				position: absolute;
-				// right: 27.5%;
-				font-size: calc(.3vw + 9px);
-				transition: 0.4s ease all;
-				background-color: $mainColor;
-				color: aliceblue;
-				cursor: pointer;
-				border: 2px solid $borderColor;
-				border-radius: 135px;
-				padding: calc(0.5vw + 4px);
-			}
-			#showInput {
-				position: absolute;
-				z-index: 1;
-				transition: 0.4s ease all;
-				background-color: $mainColor;
-				color: aliceblue;
-				font-size: 16px;
-				border: 2px solid $borderColor;
-				border-radius: 135px;
-				padding:  calc(0.5vw + 5px);
-				cursor: pointer;
-				&:hover {
-					background-color: $mainColorHovered;
-					border: 2px solid $borderColorHovered;
-				}
-			}
-		}
-	}
+	
 	.copyright {
 		grid-column: 1/5;
 		display: flex;
@@ -173,3 +114,4 @@
 	}
 }
 
+@import '../forms/newsletter'

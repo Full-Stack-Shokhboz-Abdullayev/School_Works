@@ -1,0 +1,13 @@
+html {
+	scroll-behavior: smooth;
+	overflow: auto;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: "Montserrat", Poppins, sans-serif;
+}
+i {
+    color: $iconColor;
+}
