@@ -151,7 +151,10 @@
 		top: 1% !important;
 	}
 }
-@media (max-width: 440px) {
+@media (max-width: 414px) {
+	.footer {
+		margin-top: 2vh !important;
+	}
 	.link-container-bottom {
 		ul {
 			margin-top: 0px !important;
@@ -163,7 +166,8 @@
 			li {
 				width: 100% !important;
 				height: 16vh !important;
-				margin-bottom: 15px !important;
+				margin-top: 7.5px !important;
+				margin-bottom: 7.5px !important;
 				background-color: rgba(
 					$color: aliceblue,
 					$alpha: 0.25
@@ -180,6 +184,9 @@
 	}
 	.big-background {
 		padding-top: 0px !important;
+		.images-slide {
+			margin-bottom: 20px;
+		}
 	}
 
 	.navLinks {

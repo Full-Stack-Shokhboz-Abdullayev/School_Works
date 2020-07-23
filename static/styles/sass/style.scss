@@ -7,10 +7,12 @@
 	pointer-events: $po;
 }
 
-@import './regularStyles/regularStyles';
+@import "./regularStyles/regularStyles";
 body {
 	overflow-x: hidden;
 	padding: 0px;
+	background-color: darken($color: $mainColorHovered, $amount: 6%) !important;
+
 	margin: 0px;
 	display: border-box;
 	position: relative;
@@ -63,7 +65,7 @@ body {
 		z-index: 1;
 		padding-top: 40px;
 		grid-row-gap: 1vh;
-		
+
 		background-repeat: no-repeat;
 		background-size: cover;
 
@@ -75,7 +77,6 @@ body {
 
 		background-color: darken($color: $mainColorHovered, $amount: 6%);
 		.logo {
-			
 			padding-left: 1vw;
 			img {
 				width: calc(3vw + 68px);
@@ -88,7 +89,7 @@ body {
 		}
 		.darken {
 			position: absolute;
-			height: 135vh;
+			height: 137vh;
 			width: 100%;
 			background-color: rgba(12, 15, 31, 0.438);
 			z-index: 3;

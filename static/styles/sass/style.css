@@ -18,6 +18,7 @@ i {
 body {
   overflow-x: hidden;
   padding: 0px;
+  background-color: #170717 !important;
   margin: 0px;
   display: border-box;
   position: relative;
@@ -120,7 +121,7 @@ body .big-background .z {
 
 body .big-background .darken {
   position: absolute;
-  height: 135vh;
+  height: 137vh;
   width: 100%;
   background-color: rgba(12, 15, 31, 0.438);
   z-index: 3;
@@ -962,7 +963,10 @@ body .newsletter-box .box input[type="submit"]:hover {
   }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 414px) {
+  .footer {
+    margin-top: 2vh !important;
+  }
   .link-container-bottom ul {
     margin-top: 0px !important;
     display: -webkit-box !important;
@@ -984,7 +988,8 @@ body .newsletter-box .box input[type="submit"]:hover {
   .link-container-bottom ul li {
     width: 100% !important;
     height: 16vh !important;
-    margin-bottom: 15px !important;
+    margin-top: 7.5px !important;
+    margin-bottom: 7.5px !important;
     background-color: rgba(240, 248, 255, 0.25) !important;
     color: aliceblue;
   }
@@ -993,6 +998,9 @@ body .newsletter-box .box input[type="submit"]:hover {
   }
   .big-background {
     padding-top: 0px !important;
+  }
+  .big-background .images-slide {
+    margin-bottom: 20px;
   }
   .navLinks {
     background-color: rgba(104, 104, 103, 0.65) !important;
